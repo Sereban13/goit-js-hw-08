@@ -14,5 +14,5 @@ function getTimeCode(data) {
 player.on('timeupdate', throttle(getTimeCode, 1000));
 
 
-player.setCurrentTime(localStorage.getItem(LOCAL_STORAGE_KEY)) || 0;
+player.setCurrentTime(localStorage.getItem(LOCAL_STORAGE_KEY) || 0);
 

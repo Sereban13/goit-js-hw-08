@@ -33,6 +33,7 @@ function onInput (eve) {
 // видаляємо дані з localStorage
 function onSubmit (e) {
     e.preventDefault();
+    console.log(JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)));
     e.target.reset();
     localStorage.removeItem(LOCAL_STORAGE_KEY);
 }
